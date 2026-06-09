@@ -4,3 +4,4 @@
 # 但排除以下檔案不予忽略
 !.gitignore
 !index.html
+!README.md
