@@ -1,12 +1,6 @@
-# 本地 PRD 文件（不推送）
-/CZ_dataset.md
-/CZ_dataset.py
-/__pycache__
+# 忽略所有檔案與目錄
+*
 
-# 忽略 Node 依賴資料夾
-node_modules/
-**/node_modules/
-web/node_modules/
-node_module/
-**/node_module/
-web/node_module/
+# 但排除以下檔案不予忽略
+!.gitignore
+!index.html
