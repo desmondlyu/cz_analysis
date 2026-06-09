@@ -1,0 +1,9 @@
+# 本地 PRD 文件（不推送）
+/CZ_dataset.md
+/CZ_dataset.py
+/__pycache__
+
+# 忽略 Node 依賴資料夾
+node_modules/
+**/node_modules/
+web/node_modules/
