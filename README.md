@@ -41,38 +41,4 @@
 * 導出的 Compare 工作表內含動態 Excel 巢狀公式（含 `IF`, `ABS`, `OR`, `UPPER` 等），自動動態鏈結到 `DATASHEET_SPEC` 工作表。
 * 開啟導出的 Excel 檔案後，在 Microsoft Excel 中修改規格限制，判定 Verdict 與良率 Ratio 依然會自動隨公式即時重新運算。
 
----
-
-## 👥 作者與團隊
-
-* **作者**：PP32 YPLu (Desmond Lyu)
-
----
-
-## 📄 版權宣告 (License)
-
-本專案採用 [MIT License](https://opensource.org/licenses/MIT) 授權。
-
-```text
-MIT License
-
-Copyright (c) 2026 PP32 YPLu (Desmond Lyu)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 ```
