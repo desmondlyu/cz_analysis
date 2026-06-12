@@ -3,31 +3,6 @@
   最後更新：2026-06-12，Session 4109b801
   ================================================================ -->
 
-## 🤖 AI 快速喚醒區（給 Copilot / AI 看）
-> 下次回到此專案，請先讀本節，再閱讀其他說明文件，即可還原完整開發背景。
-
-### 專案定位
-本專案為特性測試數據分析工具，包含一鍵式 React 前端（打包為單一 `index.html` 部署）以及 Python 端的輔助轉換與 Boxplot 生成腳本，適用於 FT 數據對照與良率評估。
-
-### 重要技術決策
-| 技術決策 | 實作內容 |
-| --- | --- |
-| **Dummy Rd 欄位新增** | 只要 `Test Item` 內含 `2T, 4T, 6T, 8T, 10T, 12T, 14T, 16T` 即分類為 `"Yes"`，其餘空值。擴展至數據網格、多選篩選、圖表預覽及 Excel 匯出。 |
-| **VIH/VIL 判定修正** | VIH 僅與 `Min` 做比較，`Value < Min` 判定為 Pass；VIL 僅與 `Max` 做比較，`Value > Max` 判定為 Pass。VIL 公式結果會乘以 1000 轉為 mV。 |
-| **VCC=VIO 解析公式** | 當 `VIO` 的實測值不為空時，對 `VIH`、`VIL` 以及 `VOH*` 項目解析 spec 公式，使 `VCC` 以 `VIO` 的實測值代入。 |
-| **Spec 編輯連動** | 當編輯項目屬於 `Time`，或屬於 `DTR read` / `Except NR/DTR` / `Normal Read` 且 `Dummy Rd` 為空時，全表中符合相同條件的同名 Item 皆會連動修改。 |
-| **Section C 推薦規格報表** | 在 Summary 中記憶規格修改前後的變更，分類為 Tighten / Relax / Modify。於 Excel 的 Summary 工作表以及網頁 Summary 頁面中均追加 Section C「規格推薦表（`C. Recommended specs (relax or tighten)`）」進行展示。 |
-| **Marginal 閥值修改** | 將 Section B（Pass but Spec is Marginal）閥值由 1.05 改為 1.15，所有比值 < 1.15 的項目皆會列在總覽報表與匯出檔案中。 |
-
-### 固定設定值
-* VIL mV 轉換乘數：`1000.0`
-* Marginal Spec 比值閥值：`1.15`
-
-### 尚未完成的功能 (TODO)
-- [ ] 支援更多圖表排序模式（如依良率 Ratio 排序）
-- [ ] 優化在大數據集下的前端網格渲染效能
-- [ ] 支援多產品線交叉比對分析功能
-
 # 特性測試數據分析工具 (CZ Dataset Analysis Tool)
 
 此工具用來分析 FT 特性資料，提供視覺化、統計化後的數據、圖表，並且適合提供給 JMP 作圖的資料結構
