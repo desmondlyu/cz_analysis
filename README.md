@@ -19,6 +19,7 @@
 | **網頁視覺設計** | 為「統計總覽」、「數據編輯表格」、「分析圖表預覽」新增毛玻璃（Glassmorphism）效果外框；圖表標示說明改為貼緊圖表下方的無邊框設計。 |
 | **移除匯出 Transfer** | 在 Excel 匯出時將寫入 `Transfer` 工作表的程式碼註解保留，以符合使用者需求不再產生該分頁。 |
 | **修復選單遮擋** | 在 `.grid-controls` 與 `.chart-multiselect-panel` 容器上新增 `position: relative; z-index: 10;`，建立更高的 stacking context，解決下拉選單被資料表格及圖表遮擋的問題。 |
+| **統計總表 Group** | 在網頁與 Excel 匯出的「統計總表（Summary）」的 Section A, B, C 中同步新增 `Group` 欄位與對應屬性，保持 UI 呈現的一致性。 |
 
 ### 固定設定值
 - `Value_Spec_Ratio` (Marginal 門檻)：`1.15`
