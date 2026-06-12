@@ -22,6 +22,7 @@
 | **統計總表 Group** | 在網頁與 Excel 匯出的「統計總表（Summary）」的 Section A, B, C 中同步新增 `Group` 欄位與對應屬性，保持 UI 呈現的一致性。 |
 | **邊際裕度對照值** | 在統計總表的 Section B 中新增「實際Value vs Spec」欄位（網頁與 Excel 同步），並格式化輸出最差比值下的實測值與規格限制。 |
 | **新增比值排序** | 在「數據編輯表格」的 `Ratio` 與「統計總表 Section B」的 `Worst GuardBand (Value_Spec_Ratio)` 欄位標題新增點擊排序功能（支援升序/降序/預設切換），提升數據分析效率。 |
+| **合併同名項目** | 將統計總表（Summary）的 Section A、B、C 表格由原來的「Item + Description」複合鍵改為僅以「Test Item（Item）」作為唯一鍵進行歸納合併，同名項目的 Description 與 Alignment 將會以逗號去重拼接展示，避免重複行。 |
 
 ### 固定設定值
 - `Value_Spec_Ratio` (Marginal 門檻)：`1.15`
